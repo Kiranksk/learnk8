@@ -19,3 +19,13 @@ sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl
  sudo install minikube-linux-amd64 /usr/local/bin/minikube
  
  minikube start --driver=docker
+
+
+
+#Kubectl commands
+
+kubectl describe pods
+kubectl logs shell-demo -f
+kubectl get nodes
+kubectl get pod shell-demo
+kubectl exec --stdin --tty shell-demo -- /bin/bash
